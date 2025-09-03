@@ -1,0 +1,28 @@
+{
+  "name": "repzheaven",
+  "version": "1.0.0",
+  "description": "RepzHeaven fullstack shop (scraper + paypal)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "axios": "^1.11.0",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^4.21.2",
+    "fs-extra": "^11.3.1",
+    "helmet": "^6.2.0",
+    "morgan": "^1.10.1",
+    "node-fetch": "^2.7.0",
+    "paypal-rest-sdk": "^1.8.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

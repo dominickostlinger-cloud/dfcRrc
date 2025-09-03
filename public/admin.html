@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - RepzHeaven</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header"><div class="logo">RepzHeaven Admin</div></header>
+  <main style="padding:2rem;max-width:900px;margin:0 auto;">
+    <h2>Produkt importieren (CNFans Link)</h2>
+    <p>Füge hier den CNFans-Produktlink ein, klicke <strong>Import</strong> → überprüfe die Daten → <strong>Save</strong>.</p>
+
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+      <input id="import-url" style="flex:1;padding:.6rem;border-radius:6px;border:1px solid #333;background:#111;color:#fff" placeholder="https://cnfans.com/..." />
+      <button id="do-import" class="btn-primary">Import</button>
+    </div>
+
+    <div id="import-result" style="margin-top:1rem;"></div>
+
+    <hr style="margin:2rem 0" />
+
+    <h3>Aktuelle Produkte</h3>
+    <div id="product-list"></div>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

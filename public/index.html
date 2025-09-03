@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RepzHeaven</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">RepzHeaven</div>
+    <nav>
+      <a href="#products">Produkte</a>
+      <a href="#contact">Kontakt</a>
+      <a href="#" id="toggle-cart">🛒 Warenkorb (<span id="cart-count">0</span>)</a>
+      <a href="/admin.html" class="admin-link">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>RepzHeaven — CNFans Rep Shop</h1>
+      <p class="sub">Hochwertige Produkte, direkt importiert — du fügst nur den CNFans Link ein.</p>
+      <button class="btn-primary" onclick="document.getElementById('search').focus()">Jetzt entdecken</button>
+    </section>
+
+    <section class="controls">
+      <div class="categories">
+        <button class="cat-btn active" data-cat="all">Alle</button>
+        <button class="cat-btn" data-cat="sneakers">Sneakers</button>
+        <button class="cat-btn" data-cat="bekleidung">Bekleidung</button>
+        <button class="cat-btn" data-cat="accessoires">Accessoires</button>
+        <button class="cat-btn" data-cat="bestseller">Bestseller</button>
+      </div>
+      <div class="search-bar">
+        <input id="search" placeholder="Suche nach Produkten..." />
+      </div>
+    </section>
+
+    <section id="products" class="product-section">
+      <h2>Produkte</h2>
+      <div id="product-grid" class="grid"></div>
+    </section>
+  </main>
+
+  <aside id="cart" class="cart-panel" aria-hidden="true">
+    <button id="close-cart" class="close-cart">✕</button>
+    <h2>Warenkorb</h2>
+    <div id="items"></div>
+    <div class="total" id="cart-total">Gesamt: €0.00</div>
+    <div id="paypal-button-container"></div>
+  </aside>
+
+  <section id="contact" class="contact-section">
+    <h2>Kontaktiere uns</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="E-Mail" required />
+      <textarea placeholder="Nachricht" rows="4" required></textarea>
+      <button type="submit" class="btn-primary">Senden</button>
+    </form>
+    <p>Oder direkt: <a href="mailto:repzheaven@hotmail.com">repzheaven@hotmail.com</a></p>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 RepzHeaven</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
